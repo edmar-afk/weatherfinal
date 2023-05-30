@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Homepage</title>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <link rel="icon" type="image/x-icon" href="{% static 'image/Picture5.png' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+
+  <body class="font-serif leading-normal tracking-normal background">
+    <div class="flex container mx-auto items-center justify-center h-screen">
+      <div class="p-6">
+        <h1 class="text-5xl font-bold text-center text-white">
+          Weather Prediction App
+        </h1>
+        <div class="flex justify-center mt-12">
+          <a href="{% url 'predict_weather' %}" class="bg-teal-300 hover:bg-teal-500 p-4 rounded-lg ">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
